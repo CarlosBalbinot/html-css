@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id    = em CSS é #
+    em HTML é class = em CSS é .
+    id é único para uma tag
+    class é para multiplas tags
+*/
+body {
+    background-image: linear-gradient(to top,#4c698348 60%,white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #3FA7FF;
+}
+h1#principal {
+    color: white;
+    background-color: #4B5055;
+    border-radius: 15px;
+    text-align: center;
+}
+/*Quando quisermos diferenciar dos <h1>, podemos dar uma identificação ao mesmo, utilizando o id ao lado da tag. Ao virmos para a CSS, adicionamos o nome da tag # e o nome do id.*/
+h2 {
+    color: #599BD5;
+}
+.basico {
+    color: rgb(94, 94, 94);
+    font-weight: bold;
+}
+.intermediario {
+    color: blueviolet;
+    font-weight: bold;
+}
+.avancado {
+    color: yellow;
+    font-weight: bold;
+}
+.destaque {
+    background-color: rgba(134, 26, 235, 0.356);
+}

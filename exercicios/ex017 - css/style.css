@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    /*Medidas absolutas:
+    cm (centimetro), mm (melimetro), in (polegada), *px (pixel)*, pt (ponto), pc (paica)
+
+    medidas Relativas:
+    *em*, ex, rem, vw, vh, % 
+    
+    - 16px geralmente é 1em */
+    font-family: 'work Sans', Arial, Helvetica, sans-serif;
+    font-size: 1em ;
+    /*font-weight: normal; (Fonte para colocar negrito
+    lighter normal bold bolder)
+    font-style: italic; (Fonte para colocar italico)
+    text-decoration: underline; (Fonte para colocar sublinhado)*/ 
+}
+h1 {
+    /* 
+    font-family: 'work Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+
+    Shorthand font (inves de escrver tudo isso, vai ser resumido em uma linha)
+    - font-style -> font-weight -> font-size -> font-family
+    */
+    font: italic bolder 3em 'work Sans', sans-serif;
+}
+h2 {
+    font: bold 2em 'work Sans';
+}

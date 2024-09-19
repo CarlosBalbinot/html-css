@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+div {
+    display: inline-block; /*Deixar um ao lado do outro, na mesma linha*/
+    background-color: rgb(194, 193, 193);
+    border: 1px solid black; /*Colocar bordas*/
+    text-align: center;
+    height: 200px; /*Tamanho*/
+    width: 200px; /*Largura*/
+}
+div:hover { /*: depois da tag, significa que vamos colocar um elemento nela, uma psedo classe. Neste caso, o 'hover', faz com que, ao passarmos o mouse em cima da div (caixinha) ele fique com uma cor que eu escolhi. Mas claro, pode configurar várias outras coisas.*/
+    background-color: rgb(206, 0, 206);
+}

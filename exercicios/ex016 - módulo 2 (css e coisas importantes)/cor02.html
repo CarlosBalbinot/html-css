@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex011/favicon.ico" type="image/x-icon">
+    <title>Gradiente em CSS</title>
+    <style>
+        * {
+            height: 100%;
+        }
+
+        body {
+            /*background-image: radial-gradient(circle, #e2c2c6, #976391);*/
+            background-image: linear-gradient(to bottom, #e2c2c6, #976391);
+            background-attachment: fixed; /*Fixar cor fundo*/
+        }
+
+        /*IMPORTANTE - Degrade - background-image: linear-gradiente
+          to left - esquerda
+          to rigt - direita
+          to top - para cima
+          to bottom - para baixo*/
+
+        /*IMPORTANTE - Pode colocar a porcentagem ao lado da cor, para indicar o quantos porcentos você quer daquela cor para seu degrade.*/
+        
+        /*IMPORTANTE - Ao utilizar no style a tag '*', será uma configuração global na css, ou seja, irá modificar tudo de uma vez. Geralmente utilizado para ajustar altura e algumas outras coisas.*/
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

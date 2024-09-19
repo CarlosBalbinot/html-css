@@ -1,0 +1,18 @@
+@charset "UTF-8"; /*Utiliza para palavras que tem acentuação na língua Portuguesa.*/
+
+body {
+    background-color: rgb(231, 169, 231);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+h1 {
+    color: rgb(253, 153, 3);
+    background-color: rgb(243, 243, 83);
+}
+h2 {
+    color: rgb(247, 247, 237);
+}
+p {
+    text-align: justify;
+}

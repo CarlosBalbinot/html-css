@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <hr>
+    <h2>Listas ordenadas</h2>
+    <ol type="1" start="2">
+        <li>Acordar</li>
+        <li>Ligar para a mãe</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Dormir</li>
+    </ol> <!--ol = Lista Ordenadas - adicionando o 'type' ao lado da 'ol', podemos escolher o formato da lista, ou seja, se ela será númerica, abc,... Também podemos adicionar o 'start', que indicará de qual número ou letra começará a contagem.
+              li = Formato de lista. Ex: vai adicionando de forma automática o 1, 2, 3,...-->
+
+    <h2>Listas não ordenadas</h2>
+    <ul type="square">
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Pão</li>
+        <li>Ovo</li>
+        <li>Presunto</li>
+        <li>Cookies</li>
+        <li>Frango</li>
+    </ul> <!-- Tipos: disc (bolinha fechada), circle (bolinha furada) e square (quadrado)-->
+
+    <h2>Junção de listas</h2>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Cliper</li>
+            <li>Fortra</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="4">
+            <li>Python</li>
+            <li>Java</li>
+            <li>PHP</li>
+        </ol>
+    </ol>
+
+    <h3>Meus jogos favoritos</h3>
+    <ol>
+        <li>PlayStation</li>
+        <ul type="disc">
+            <li>GTA</li>
+            <ul type="circle">
+                <li>GTA San Andreas</li>
+                <li>GTA V</li>
+            </ul>
+            <li>Uncharted</li>
+            <li>LeftForDead</li>
+        </ul>
+        <li>XBOX</li>
+        <ul type="square">
+            <li>SuperMario</li>
+            <li>EuroTruck</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do designe de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Liguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+    <!--dl = lista de definição
+        dt = termo a ser abordado
+        dd = descrição do termo -->
+</body>
+</html>

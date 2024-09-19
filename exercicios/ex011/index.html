@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+        <img src="imagens/grande.png" alt="Imagem flexivel">
+    </picture>
+    <!-- O picture é utilizado geralmente para incluir imagens e elas se adpatarem ao formato de dela do usuário. Por exemplo, ao adicionar o 'source' indicamos que, se o tamanho maximo da tela do usuário for 750px, deve ser utilizado a imagem pequena. Se o tamanho máximo da tela for 1050px, será utilizado a imagem media. Maior que isso, será a imagem grande. Então, foi criado 3 imagens iguais, mas com tamanhos diferentes, para que, caso o usuário abra o site em um computador, tablet e celular, as imagens se adaptam no tamanho da tela e não fica algo ruim de se ver. Top!
+     *IMPORTANTE - as tags 'source' devem estar organizadas na ordem decrescente e de baixo para cima, Como está neste código.-->
+    <br><br><br>
+    <hr>
+    <h1>Audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <audio src="midia/music.mp3"controls autoplay></audio>
+    <!-- Para adicionarmos audios em site, deve simplemente adicionar a tag <audio> e adicionar o link do arquivo da musica. Também, para aparecer o controle da musica no site, basta escrever "controls" e o "autoplay" para começar a reproduizer a musica quando entrar no site-->
+    <!-- Caso isso não funcionar e quiser que os audios funcionem com todos os tipos de navegadores, aqui vai um outro jeito.
+     *É adicionado áudios iguais, mas em formato diferentes. Primeiro o navegador tentará rodar o primeiro (mp3), se não conseguir, irá tentar o segundo. Caso não consiga rodar nem o segundo e nem o terceiro, irá aparecer a mensagem escrita no paragrafo.-->
+     <!--*IMPORTANTE - controls = aparecer a midia no site
+                     - autoplay = começar a tocar o áudio
+                     - loop = quando terminar o áudio ele começa de novo-->
+
+     <!-- Recomenda-se sempre colocar o "preload= metadata" na tag <audio>-->
+     <audio preload="metadata" controls autoplay loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+
+     </audio>
+</body>
+</html>

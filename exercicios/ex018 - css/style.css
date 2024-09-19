@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*Importando fontes pelo *Google Fonts*. Escolhe a fonte, copia o import e cola ao seu código. Por fim, adiciona o nome da fonte importada nas linhas do Font-family.*/
+body {
+    font-family: 'work Sans', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+h1 {
+    font-family: Satisfy, 'Times New Roman', Times, serif;
+    font-size: 3em;
+}
+h2 {
+    font-family: Satisfy, 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
