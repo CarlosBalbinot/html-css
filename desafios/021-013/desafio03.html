@@ -51,19 +51,19 @@
         <caption>Notas Gerais de Disciplinas</caption>
         <thead>
             <tr>
-                <th rowspan="2" class="cabecalho">Área</th>
-                <th rowspan="2" class="cabecalho">Disciplinas</th>
-                <th colspan="2" class="cabecalho">Notas</th>
-                <th rowspan="2" class="cabecalho" style="width: 50px;">Média</th>
+                <th rowspan="2" scope="rowgroup" class="cabecalho">Área</th>
+                <th rowspan="2" scope="row" class="cabecalho">Disciplinas</th>
+                <th colspan="2" scope="rowgroup" class="cabecalho">Notas</th>
+                <th rowspan="2" scope="row" class="cabecalho" style="width: 50px;">Média</th>
             </tr>
             <tr>
-                <th style="width: 50px;" class="cabecalho">Nota 1</th>
-                <th style="width: 50px;" class="cabecalho">Nota 2</th>
+                <th style="width: 50px;" scope="row" class="cabecalho">Nota 1</th>
+                <th style="width: 50px;" scope="row" class="cabecalho">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="colgroup">Exatas</th>
                 <td class="disciplinas">Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -88,11 +88,11 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" class="cabecalho" id="left01">Média de Exatas</th>
+                <th colspan="4" scope="colgroup" class="cabecalho" id="left01">Média de Exatas</th>
                 <td class="cabecalho">0.0</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="colgroup">Humanas</th>
                 <td class="disciplinas">História</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -105,7 +105,7 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" id="left02" class="cabecalho">Média de Humanas</th>
+                <th colspan="4" scope="colgroup" id="left02" class="cabecalho">Média de Humanas</th>
                 <td class="cabecalho">0.0</td>
             </tr>
         </tbody>
