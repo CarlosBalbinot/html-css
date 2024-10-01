@@ -9,6 +9,15 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            background-color: lightgrey;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            padding: 5px;
+        }
+        
         table {
             border-collapse: collapse;
             width: 600px;
@@ -20,11 +29,20 @@
             text-align: center;
         }
 
-        table th {
+        .cabecalho {
             background-color: grey;
+            color: white;
+            font-weight: bold;
         }
 
-        table
+        .disciplinas {
+            text-align: left;
+        }
+
+        #left01, #left02 {
+            text-align: left;
+        }
+
     </style>
 </head>
 <body>
@@ -33,14 +51,14 @@
         <caption>Notas Gerais de Disciplinas</caption>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2" style="width: 50px;">Média</th>
+                <th rowspan="2" class="cabecalho">Área</th>
+                <th rowspan="2" class="cabecalho">Disciplinas</th>
+                <th colspan="2" class="cabecalho">Notas</th>
+                <th rowspan="2" class="cabecalho" style="width: 50px;">Média</th>
             </tr>
             <tr>
-                <th style="width: 50px;">Nota 1</th>
-                <th style="width: 50px;">Nota 2</th>
+                <th style="width: 50px;" class="cabecalho">Nota 1</th>
+                <th style="width: 50px;" class="cabecalho">Nota 2</th>
             </tr>
         </thead>
         <tbody>
@@ -70,8 +88,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" class="disciplinas">Média de Exatas</th>
-                <td>0.0</td>
+                <th colspan="4" class="cabecalho" id="left01">Média de Exatas</th>
+                <td class="cabecalho">0.0</td>
             </tr>
             <tr>
                 <th rowspan="2">Humanas</th>
@@ -87,8 +105,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" class="disciplinas">Média de Humanas</th>
-                <td>0.0</td>
+                <th colspan="4" id="left02" class="cabecalho">Média de Humanas</th>
+                <td class="cabecalho">0.0</td>
             </tr>
         </tbody>
     </table>
