@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla molestiae, aliquid ut at voluptates nobis aliquam ullam quia magnam et porro consectetur autem in eos sint officia cumque est eligendi?</p>
+
+    <h2>Aqui em baixo temos um exemplo de iframe sendo utilizando com segurança máxima!</h2>
+    <!--SandBox é utilizado para proteger o iframe de sites maliciosos
+        Por exemplo, o sandblock irá bloquear de você colocar informação dentro do site do iframe, assim, protegendo suas informações.
+        No-referrer faz com que o site que está dentro do iframe não colete dados seus para ututlizar para enviar propaganda.-->
+    <iframe src="paginas-extras/pag04.html" frameborder="0" referrerpolicy="no-referrer" sandbox="sandbox">
+        <p>Seu navegador não é compatível com isso!</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus voluptates fuga illo amet nisi recusandae, consectetur perspiciatis, culpa suscipit eveniet necessitatibus unde non ratione quia, voluptatum itaque. Deserunt, magni voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti impedit exercitationem culpa possimus alias rem debitis temporibus! Quia voluptatibus pariatur, harum ipsa ipsum illo repudiandae officia sapiente nostrum fugit accusamus.</p>
+
+    <h2>Aqui em baixo temos um exemplo de iframe sendo utilizando com algumas configurações de seguranças, tendo aberturas para algumas coisas dentro do iframe. Confira!</h2>
+    <!--No SandBox foi dado algumas aberturas, por exemplo: a utilizando do formulário, 
+        ou  seja, o usuário poderá fornecer informações. Permitindo coisas da mesma origem e utilização de scripts. 
+        LEMBRANDO: somente para sites que são confiáveis.-->
+    <iframe src="paginas-extras/pag04.html" frameborder="0" referrerpolicy="no-referrer" sandbox="allow-same-origin allow-scripts allow-forms">
+        <p>Seu navegador não é compatível com isso!</p>
+    </iframe>
+</body>
+</html>
