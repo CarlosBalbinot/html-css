@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário.</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--
+            input:text = utilizado para caixa de texto.
+            input:submit = utilizado para botões de enviar informação.
+            autocomplete="off" = tirar o auto complemento de informações nas caixas de texto.
+            action="" = para onde será enviado as informações recebidas dos formulários.
+            label = utilizado para fazer a ligação da caixa de texto com a palavra na frente. (sempre será o 'id' do input no label)
+            method='get' = parece as informações da caixa de texto na url.
+            method='post' = esconder as informações da caixa de texto da url.
+        -->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
