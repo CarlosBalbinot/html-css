@@ -20,11 +20,13 @@
         <!--
             input:text = utilizado para caixa de texto.
             input:submit = utilizado para botões de enviar informação.
+            input:reset = botão de limpar a caixa de texto.
             autocomplete="off" = tirar o auto complemento de informações nas caixas de texto.
             action="" = para onde será enviado as informações recebidas dos formulários.
             label = utilizado para fazer a ligação da caixa de texto com a palavra na frente. (sempre será o 'id' do input no label)
             method='get' = parece as informações da caixa de texto na url.
-            method='post' = esconder as informações da caixa de texto da url.
+            method='post' = esconder as informações da caixa de texto da url. (porém não protege as informações do usuário, somente da url. Não é um método 100% seguro.)
+            input:password = utilizado para inserção de senhas.
         -->
         <p><label for="inome">Nome:</label> 
             <input type="text" name="nome" id="inome"></p>

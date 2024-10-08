@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Testando formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!--
+            *required (input)* = tornar a caixa de texto obrigatória.
+            *minlength="" (input)* = utilizado para especificar o minímo de caracteres na caixa de texto.
+            *mazlength="" (input)* = utilizado para especificar o máximo de caracteres na caixa de texto.
+            *size (input)* = adicionado para definir o tamanho da caixa de texto.
+            *placeholder (input)* = colocar uma dica na caixa de texto. Por exemplo, o que for digitado ficará escrito na caixa de texto, em uma cor bem fraquinha, ajudando o usuário a colocar a informação.
+            *autocomplete (form)* = se quer tirar ou deixar o autocomplemento das caixas de texto.
+            *autocomplete (input)* = é adicionado ao input para especificar o que é aquele autocomplete da caixa de texto, se será digitado um nome de usuário, uma senha, etc. Isso ajuda os meios do google de armazenar e guardar suas informações para a próxima vez.
+            Para senhas, duas opções: 'new-password' = senha nova, cadastro de login. 'current-password' = login, onde não precisa cadastrar senha.
+        -->
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usuario" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="senha" id="isen" required minlength="8" maxlength="15" size="10" placeholder="min 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
